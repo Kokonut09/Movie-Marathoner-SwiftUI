@@ -1,26 +1,19 @@
-//
-//  ContentView.swift
-//  Movie Marathoner v2
-//
-//  Created by Andrew Saeyang on 5/7/23.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Suhhh dude 🚀")
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A120C6282ADAE428009CD245 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A120C6272ADAE428009CD245 /* CatalogView.swift */; };
+		A120C62A2ADAE58D009CD245 /* MarathonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A120C6292ADAE58D009CD245 /* MarathonView.swift */; };
 		A1B3FC502A089C76006713E0 /* Movie_Marathoner_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3FC4F2A089C76006713E0 /* Movie_Marathoner_v2App.swift */; };
-		A1B3FC522A089C76006713E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3FC512A089C76006713E0 /* ContentView.swift */; };
+		A1B3FC522A089C76006713E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B3FC512A089C76006713E0 /* HomeView.swift */; };
 		A1B3FC542A089C7A006713E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B3FC532A089C7A006713E0 /* Assets.xcassets */; };
 		A1B3FC572A089C7A006713E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B3FC562A089C7A006713E0 /* Preview Assets.xcassets */; };
+		A1C61CE92A18297800B776DC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C61CE82A18297800B776DC /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A120C6272ADAE428009CD245 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		A120C6292ADAE58D009CD245 /* MarathonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarathonView.swift; sourceTree = "<group>"; };
 		A1B3FC4C2A089C76006713E0 /* Movie Marathoner v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Marathoner v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B3FC4F2A089C76006713E0 /* Movie_Marathoner_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_Marathoner_v2App.swift; sourceTree = "<group>"; };
-		A1B3FC512A089C76006713E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1B3FC512A089C76006713E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1B3FC532A089C7A006713E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B3FC562A089C7A006713E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1C61CE82A18297800B776DC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A120C6262ADAE3C7009CD245 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1C61CE82A18297800B776DC /* MainView.swift */,
+				A1B3FC512A089C76006713E0 /* HomeView.swift */,
+				A120C6272ADAE428009CD245 /* CatalogView.swift */,
+				A120C6292ADAE58D009CD245 /* MarathonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A1B3FC432A089C76006713E0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +68,8 @@
 		A1B3FC4E2A089C76006713E0 /* Movie Marathoner v2 */ = {
 			isa = PBXGroup;
 			children = (
+				A120C6262ADAE3C7009CD245 /* Views */,
 				A1B3FC4F2A089C76006713E0 /* Movie_Marathoner_v2App.swift */,
-				A1B3FC512A089C76006713E0 /* ContentView.swift */,
 				A1B3FC532A089C7A006713E0 /* Assets.xcassets */,
 				A1B3FC552A089C7A006713E0 /* Preview Content */,
 			);
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B3FC522A089C76006713E0 /* ContentView.swift in Sources */,
+				A1B3FC522A089C76006713E0 /* HomeView.swift in Sources */,
+				A120C62A2ADAE58D009CD245 /* MarathonView.swift in Sources */,
+				A1C61CE92A18297800B776DC /* MainView.swift in Sources */,
+				A120C6282ADAE428009CD245 /* CatalogView.swift in Sources */,
 				A1B3FC502A089C76006713E0 /* Movie_Marathoner_v2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
