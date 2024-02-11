@@ -10,9 +10,11 @@ struct CatalogPickerView: View {
     private var gridItemLayout = [GridItem(.flexible(minimum: 150, maximum: 170)), GridItem(.flexible(minimum: 150, maximum: 170))]
     
     let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+    
     var body: some View {
         VStack {
             Text("Pick a movie and we'll generate a list of recommendations.")
+                .font(.title3)
             
             HStack {
                 TextField("Search Movie", text: $searchText)
@@ -29,6 +31,7 @@ struct CatalogPickerView: View {
                             
                             if isEditing {
                                 Button(action: {
+//                                    isEditing.toggle()
                                     self.searchText = ""
                                 }) {
                                     Image(systemName: "multiply.circle.fill")
@@ -38,7 +41,6 @@ struct CatalogPickerView: View {
                             }
                         }
                     )
-                    .padding(.horizontal, 10)
                     .onTapGesture {
                         self.isEditing = true
                     }
@@ -48,19 +50,25 @@ struct CatalogPickerView: View {
                         self.searchText = ""
                         
                         // Dismiss the keyboard
-//                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-//
+                        //                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        //
                         UIApplication.shared.endEditing()
-
-
+                        
+                        
                     }) {
                         Text("Cancel")
                     }
                     .padding(.trailing, 10)
-                    .transition(.move(edge: .trailing))
-                    .animation(.default)
+                    
+//                    .animation(.easeIn, value: isEditing)
+//                    .transition(.move(edge: .trailing))
                 }
             }
+            .padding(.horizontal, 20)
+            .transition(.move(edge: .trailing))
+            .animation(.default, value: isEditing)
+            
+            
             
             ScrollView(.vertical) {
                 LazyVGrid(columns: gridItemLayout, spacing: 20) {

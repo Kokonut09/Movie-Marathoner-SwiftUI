@@ -8,6 +8,19 @@
 import Foundation
 
 struct MovieMockData {
+    
+    static let mockMovieList: [Movie] = [
+        mockData1,
+        mockData2,
+        mockData3,
+        mockData1,
+        mockData2,
+        mockData3,
+        mockData1,
+        mockData2,
+        mockData3
+    ]
+    
     static let mockData1: Movie = Movie(
         id: "100",
         name: "Star Obi",

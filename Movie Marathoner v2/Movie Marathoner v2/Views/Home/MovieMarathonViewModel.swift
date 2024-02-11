@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-extension HomeView {
+extension MovieMarathonView {
     class ViewModel: ObservableObject {
-        
         @Published var number: Int = 0
         @Published var hoursTextfield: String = ""
+        @Published var movieSearchTextField: String = ""
+        @Published var hoursSelected: Bool = false
+        @Published var movieSelected: Bool = false
+        
+        
         
     }
 }

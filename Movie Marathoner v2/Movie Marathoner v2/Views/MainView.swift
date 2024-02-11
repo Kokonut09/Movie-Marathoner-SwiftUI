@@ -3,7 +3,7 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         TabView {
-            HomeView(viewModel: .init())
+            MovieMarathonView(viewModel: .init())
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
